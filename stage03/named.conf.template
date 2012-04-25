@@ -1,0 +1,10 @@
+zone "eucaqa" {
+type master;
+file "/etc/bind/db.eucaqa";
+};
+
+zone "eucadomain.eucaqa" {
+type forward;
+forwarders { CLC0_IP; 
+CLC1_IP; };
+};

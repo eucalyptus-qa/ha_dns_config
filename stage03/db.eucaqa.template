@@ -1,0 +1,16 @@
+$TTL 604800
+@ IN SOA eucaqa. root.eucaqa. (
+2 ; Serial
+604800 ; Refresh
+86400 ; Retry
+2419200 ; Expire
+604800 ) ; Negative Cache TTL
+;
+@ IN NS ns.eucaqa.
+@ IN A NC_IP
+;@ IN AAAA ::1
+eucadomain.eucaqa. IN NS clc0.eucadomain.eucaqa.
+eucadomain.eucaqa. IN NS clc1.eucadomain.eucaqa.
+ns.eucaqa. IN A NC_IP
+clc0.eucadomain.eucaqa. IN A CLC0_IP
+clc1.eucadomain.eucaqa. IN A CLC1_IP
